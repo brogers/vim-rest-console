@@ -542,6 +542,7 @@ function! s:GetCurlDataArgs(request)
   """ These verbs should have request body passed as POST params.
   if httpVerb ==? 'POST'
     \ || httpVerb ==? 'PUT'
+    \ || httpVerb ==? 'DELETE'
     \ || httpVerb ==? 'PATCH'
     \ || httpVerb ==? 'OPTIONS'
     """ If data is loaded from file.
